@@ -24,8 +24,8 @@ public class DemoController extends BaseController {
 
     @GetMapping("demo")
     public JsonResponse getDemo(@RequestParam String key) {
-        
-        
+    
+        System.out.println("test031");
         return JsonResponse.builder(200, true, service.getDemo(key), null);
 
     }
